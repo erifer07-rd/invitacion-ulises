@@ -1,4 +1,4 @@
-   function confirmRSVP() {
+function confirmRSVP() {
       document.getElementById('selected-games-count').innerText = `${selectedGames.size} elegidos`;
       document.getElementById('dinner-summary').innerText = selectedDinner ? selectedDinner : "Pendiente por Ulises";
 
@@ -30,7 +30,8 @@
       let tuNumeroTelefono = "5215539247429"; 
 
       setTimeout(() => {
-        window.open(`https://wa.me{tuNumeroTelefono}?text=${mensajeCodificado}`, '_blank');
+        // CORRECCIÓN AQUÍ: se agregó $ y la diagonal /
+        window.open(`https://wa.me/${tuNumeroTelefono}?text=${mensajeCodificado}`, '_blank');
       }, 1500);
     }
   </script>
