@@ -13,7 +13,7 @@
 
       // Envío de las respuestas estructuradas directamente a WhatsApp
       let listaJuegos = selectedGames.size > 0 
-        ? Array.from(selectedGames).map(j = > `• ${j}`).join('\n') 
+        ? Array.from(selectedGames).map(j => `• ${j}`).join('\n') 
         : '• Ninguno seleccionado';
 
       let planCena = selectedDinner ? selectedDinner : "Pendiente por definir";
@@ -27,7 +27,7 @@
                             `¡Ya quiero que sea el fin de semana! 🥰`;
 
       let mensajeCodificado = encodeURIComponent(mensajeWhatsApp);
-      let tuNumeroTelefono = "521234567890"; // <- Pon tu número de celular aquí con clave de país
+      let tuNumeroTelefono = "5215539247429"; // <- 🚨 REEMPLAZA ESTE NÚMERO POR EL TUYO
 
       setTimeout(() => {
         window.open(`https://wa.me{tuNumeroTelefono}?text=${mensajeCodificado}`, '_blank');
